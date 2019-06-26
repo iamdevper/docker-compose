@@ -1,0 +1,14 @@
+version: "3"
+services:
+  webapp:
+    build:
+      context: webapp
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+  webapp-with-opcahce:
+    build:
+      context: webapp-with-opcahce
+      dockerfile: Dockerfile-with-opcahce
+    ports:
+      - 8081:80
