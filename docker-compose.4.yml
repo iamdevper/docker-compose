@@ -6,9 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:80
-  webapp-with-opcahce:
+  webapp-with-opcache:
     build:
-      context: webapp-with-opcahce
-      dockerfile: Dockerfile-with-opcahce
+      context: webapp-with-opcache
+      dockerfile: Dockerfile-with-opcache
     ports:
       - 8081:80
